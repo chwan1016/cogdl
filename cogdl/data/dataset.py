@@ -12,7 +12,7 @@ from cogdl.utils import Accuracy, CrossEntropyLoss
 
 
 def to_list(x):
-    if not isinstance(x, collections.Iterable) or isinstance(x, str):
+    if not isinstance(x, collections.abc.Iterable) or isinstance(x, str):
         x = [x]
     return x
 
